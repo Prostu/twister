@@ -1,5 +1,7 @@
 On OSX 10.10 install posgresql using:
+```
 $ brew install postgres
+```
 
 -----
 Notes:
@@ -21,5 +23,7 @@ Or, if you don't want/need launchctl, you can just run:
 
 -----
 
+```
 $ createdb twister_dev
 $ psql twister_dev
+```
