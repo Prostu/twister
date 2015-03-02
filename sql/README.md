@@ -1,6 +1,6 @@
 On OSX 10.10 install posgresql using:
 ```
-$ brew install postgres
+brew install postgres
 ```
 
 -----
@@ -14,16 +14,22 @@ To migrate existing data from a previous major version (pre-9.4) of PostgreSQL, 
   http://www.postgresql.org/docs/9.4/static/upgrading.html
 
 To have launchd start postgresql at login:
-    ln -sfv /usr/local/opt/postgresql/*.plist ~/Library/LaunchAgents
+```
+ln -sfv /usr/local/opt/postgresql/*.plist ~/Library/LaunchAgents
+```
 Then to load postgresql now:
-    launchctl load ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist
+```
+launchctl load ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist
+```
 Or, if you don't want/need launchctl, you can just run:
-    postgres -D /usr/local/var/postgres
-
+```
+postgres -D /usr/local/var/postgres
+```
 
 -----
 
+Create a new database and edit it using:
 ```
-$ createdb twister_dev
-$ psql twister_dev
+createdb twister_dev
+psql twister_dev
 ```
