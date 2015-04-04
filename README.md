@@ -30,3 +30,11 @@ joined is given in unix time.
   message: String
 }
 ```
+
+### `Iterator[T]`
+```
+{
+  values: Array[T]
+  continuation: Number
+}
+```

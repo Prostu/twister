@@ -7,3 +7,11 @@ To start a play project use:
 ```
 activator new twister-play play-scala
 ```
+
+To run the project:
+```
+activator run
+```
+
+TODO: add authentication
+TOOD: add tests
